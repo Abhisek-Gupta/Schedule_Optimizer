@@ -7,18 +7,18 @@ fake = Faker('en_IN')
 # 1. Configuration: Intake per year (Sum = 816 students per batch)
 # 816 students / 24 groups = exactly 34 students per group for 1st years.
 intake_per_year = {
-    'CSE': 95,
-    'AI':  60,
-    'ECE': 75,
-    'EEE': 65,
-    'ME':  95,
-    'CEE': 95,
-    'CBE': 75,
-    'MME': 60,
-    'MNC': 70,
+    'CSE': 86,
+    'AI':  50,
+    'ECE': 50,
+    'EEE': 50,
+    'ME':  86,
+    'CEE': 70,
+    'CBE': 70,
+    'MME': 46,
+    'MNC': 50,
     'EP':  40,
     'CST': 40,
-    'ECO': 22
+    'ECO': 30
 }
 
 # 2. Metadata Mapping: Maps Branch to its Department and 2-letter Roll Code
@@ -45,7 +45,7 @@ levels_years = {
     'UG4': '22'
 }
 
-def generate_students_sql(filename="student_20260409.sql"):
+def generate_students_sql(filename="student_ug.sql"):
     with open(filename, 'w') as f:
         f.write("USE IITP_Timetable;\n")
         f.write("BEGIN;\n\n") 
