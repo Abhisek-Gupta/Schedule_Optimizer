@@ -1,16 +1,12 @@
 USE IITP_Timetable;
 
--- 1. Add the new 'Lab' column to the course table
-ALTER TABLE course ADD COLUMN Lab VARCHAR(20) DEFAULT NULL;
-
 -- 2. Update courses where P > 0
 BEGIN;
 
 UPDATE course SET Lab = 'CBLAB1' WHERE Course_ID = 'CB2201';
 UPDATE course SET Lab = 'CBLAB1' WHERE Course_ID = 'CB2204';
 UPDATE course SET Lab = 'CBLAB1' WHERE Course_ID = 'CB3204';
-UPDATE course SET Lab = 'CBWORKSHOP' WHERE Course_ID = 'CB5203';
-UPDATE course SET Lab = 'CEWORKSHOP' WHERE Course_ID = 'CE1201';
+UPDATE course SET Lab = 'CBLAB1' WHERE Course_ID = 'CB5203';
 UPDATE course SET Lab = 'CELAB1' WHERE Course_ID = 'CE2201';
 UPDATE course SET Lab = 'CELAB1' WHERE Course_ID = 'CE2202';
 UPDATE course SET Lab = 'CELAB2' WHERE Course_ID = 'CE2203';
@@ -27,15 +23,15 @@ UPDATE course SET Lab = 'CHLAB1' WHERE Course_ID = 'CH3203';
 UPDATE course SET Lab = 'CHLAB2' WHERE Course_ID = 'CH3205';
 UPDATE course SET Lab = 'CHLAB2' WHERE Course_ID = 'CH4206';
 UPDATE course SET Lab = 'CHLAB1' WHERE Course_ID = 'CH6201';
-UPDATE course SET Lab = 'CSLAB' WHERE Course_ID = 'CS1201';
-UPDATE course SET Lab = 'HDWLAB' WHERE Course_ID = 'CS2202';
-UPDATE course SET Lab = 'CSLAB' WHERE Course_ID = 'CS2203';
+UPDATE course SET Lab = 'CC1' WHERE Course_ID = 'CS1201';
+UPDATE course SET Lab = 'CC1' WHERE Course_ID = 'CS2202';
+UPDATE course SET Lab = 'CC1' WHERE Course_ID = 'CS2203';
 UPDATE course SET Lab = 'CC1' WHERE Course_ID = 'CS2204';
 UPDATE course SET Lab = 'CC1' WHERE Course_ID = 'CS2205';
-UPDATE course SET Lab = 'HDWLAB' WHERE Course_ID = 'CS2206';
+UPDATE course SET Lab = 'CC1' WHERE Course_ID = 'CS2206';
 UPDATE course SET Lab = 'CSLAB' WHERE Course_ID = 'CS3201';
-UPDATE course SET Lab = 'HDWLAB' WHERE Course_ID = 'CS3202';
-UPDATE course SET Lab = 'CSLAB' WHERE Course_ID = 'CS3203';
+UPDATE course SET Lab = 'CSLAB' WHERE Course_ID = 'CS3202';
+UPDATE course SET Lab = 'HDWLAB' WHERE Course_ID = 'CS3203';
 UPDATE course SET Lab = 'CSLAB' WHERE Course_ID = 'CS3204';
 UPDATE course SET Lab = 'CC1' WHERE Course_ID = 'CS5204';
 UPDATE course SET Lab = 'CC1' WHERE Course_ID = 'CS5205';
@@ -70,7 +66,7 @@ UPDATE course SET Lab = 'MALAB1' WHERE Course_ID = 'MA4202';
 UPDATE course SET Lab = 'MALAB1' WHERE Course_ID = 'MA4204';
 UPDATE course SET Lab = 'MALAB1' WHERE Course_ID = 'MC5202';
 UPDATE course SET Lab = 'MALAB1' WHERE Course_ID = 'MC5203';
-UPDATE course SET Lab = 'MELAB2' WHERE Course_ID = 'ME1201';
+UPDATE course SET Lab = 'MEWORKSHOP' WHERE Course_ID = 'ME1201';
 UPDATE course SET Lab = 'MELAB1' WHERE Course_ID = 'ME2201';
 UPDATE course SET Lab = 'MELAB1' WHERE Course_ID = 'ME2202';
 UPDATE course SET Lab = 'MELAB2' WHERE Course_ID = 'ME2204';
