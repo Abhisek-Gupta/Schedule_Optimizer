@@ -11,7 +11,7 @@ warnings.filterwarnings("ignore", category=UserWarning)
 # ==========================================
 # 1. CONFIGURATION
 # ==========================================
-DB_CONFIG = {'host': 'localhost', 'user': 'root', 'password': 'dfghklcv', 'database': 'IITP_Timetable'}
+DB_CONFIG = {'host': 'localhost', 'user': 'root', 'password': '', 'database': 'IITP_Timetable'}
 DAYS, SLOTS_PER_DAY = 5, 8 
 TOTAL_SLOTS = DAYS * SLOTS_PER_DAY
 CPU_CORES = os.cpu_count() or 4
