@@ -10,7 +10,7 @@ import re
 DB_CONFIG = {
     'host': 'localhost',
     'user': 'root',
-    'password': 'dfghklcv',
+    'password': '##########',
     'database': 'IITP_Timetable'
 }
 
