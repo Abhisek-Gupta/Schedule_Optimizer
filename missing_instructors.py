@@ -6,8 +6,8 @@ import pandas as pd
 # ==========================================
 DB_CONFIG = {
     'host': 'localhost',
-    'user': 'root',          # Replace with your MySQL username
-    'password': 'Abhishekarch@#29.',  # Replace with your MySQL password
+    'user': 'root',          
+    'password': 'password',  
     'database': 'IITP_Timetable'
 }
 

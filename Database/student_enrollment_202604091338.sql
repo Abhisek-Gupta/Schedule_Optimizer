@@ -224,3 +224,42 @@ INSERT INTO IITP_Timetable.student_enrollment (Branch,`Level`,Course_ID) VALUES
 	 ('AI','UG4','CS4211'),
 	 ('EEE','UG4','EC4205'),
 	 ('EEE','UG4','EC4206');
+INSERT INTO IITP_Timetable.student_enrollment (Branch,`Level`,Course_ID) VALUES
+	 ('PHY', 'MS1', 'PH4201'), ('PHY', 'MS1', 'PH4202'), ('PHY', 'MS1', 'PH4203'), ('PHY', 'MS1', 'PH4204'),
+	 ('CHM', 'MS1', 'CH4201'), ('CHM', 'MS1', 'CH4202'), ('CHM', 'MS1', 'CH4203'), ('CHM', 'MS1', 'CH4204'), ('CHM', 'MS1', 'CH4205'), ('CHM', 'MS1', 'CH4206'),
+	 ('MATH', 'MS1', 'MA4201'), ('MATH', 'MS1', 'MA4202'), ('MATH', 'MS1', 'MA4203'), ('MATH', 'MS1', 'MA4204'), ('MATH', 'MS1', 'MA4205');
+INSERT INTO IITP_Timetable.student_enrollment (Branch,`Level`,Course_ID) VALUES
+	 ('PHY', 'MS2', 'PH5201'), ('PHY', 'MS2', 'PH5205'), ('PHY', 'MS2', 'PH5207'), ('PHY', 'MS2', 'PH5218'), ('PHY', 'MS2', 'PH5220'), ('PHY', 'MS2', 'PH5222'),
+	 ('CHM', 'MS2', 'CH6201'), ('CHM', 'MS2', 'CH6202'), ('CHM', 'MS2', 'CH6209'),
+	 ('MATH', 'MS2', 'MA6202'), ('MATH', 'MS2', 'MA6206'), ('MATH', 'MS2', 'MA6207'), ('MATH', 'MS2', 'MA6208'), ('MATH', 'MS2', 'MA6211'), ('MATH', 'MS2', 'MA6215');
+INSERT INTO IITP_Timetable.student_enrollment (Branch,`Level`,Course_ID) VALUES
+	 ('CSE', 'MT1', 'CS5201'), ('CSE', 'MT1', 'CS5202'), ('CSE', 'MT1', 'CS5204'), ('CSE', 'MT1', 'CS5205'), ('CSE', 'MT1', 'CS6202'), ('CSE', 'MT1', 'CS6203'), ('CSE', 'MT1', 'CS6206'), ('CSE', 'MT1', 'CS6207');
+INSERT INTO IITP_Timetable.student_enrollment (Branch,`Level`,Course_ID) VALUES
+	 ('AI', 'MT1', 'CS5201'), ('AI', 'MT1', 'CS5203'), ('AI', 'MT1', 'CS5205'), ('AI', 'MT1', 'CS6202'), ('AI', 'MT1', 'CS6203'), ('AI', 'MT1', 'CS6206'), ('AI', 'MT1', 'CS6207'), ('AI', 'MT1', 'CS6209'), ('AI', 'MT1', 'CS6210');
+
+INSERT INTO IITP_Timetable.student_enrollment (Branch,`Level`,Course_ID) VALUES
+	 ('CM', 'MT1', 'EC5201'), ('CM', 'MT1', 'EC5202'), ('CM', 'MT1', 'EC6203'), ('CM', 'MT1', 'EC6204'), ('CM', 'MT1', 'EC5209'), ('CM', 'MT1', 'EC5210'), ('CM', 'MT1', 'EC5205'), ('CM', 'MT1', 'EC5206'),
+	 ('VL', 'MT1', 'EC5203'), ('VL', 'MT1', 'EC5204'), ('VL', 'MT1', 'EC5214'), ('VL', 'MT1', 'EC5215'), ('VL', 'MT1', 'EC5216'), ('VL', 'MT1', 'EC5217'), ('VL', 'MT1', 'EC5218'), ('VL', 'MT1', 'EC5219'),
+	 ('PC', 'MT1', 'EE5201'), ('PC', 'MT1', 'EE5202'), ('PC', 'MT1', 'EE5203'),  ('PC', 'MT1', 'EE6201'), ('PC', 'MT1', 'EE6213'), ('PC', 'MT1', 'EE6214'), ('PC', 'MT1', 'EE6216');
+
+INSERT INTO IITP_Timetable.student_enrollment (Branch,`Level`,Course_ID) VALUES
+	 ('TF', 'MT1', 'ME5201'), ('TF', 'MT1', 'ME5203'), ('TF', 'MT1', 'ME5205'), ('TF', 'MT1', 'ME5206'), ('TF', 'MT1', 'ME6202'), ('TF', 'MT1', 'ME6203'), ('TF', 'MT1', 'ME6204'), ('TF', 'MT1', 'ME6205'), 
+	 ('AM', 'MT1', 'ME5201'), ('AM', 'MT1', 'ME5203'), ('AM', 'MT1', 'ME5207'), ('AM', 'MT1', 'ME5208'), ('AM', 'MT1', 'ME6203'), ('AM', 'MT1', 'ME6208'), ('AM', 'MT1', 'ME6210'), ('AM', 'MT1', 'ME6212'), 
+	 ('MD', 'MT1', 'ME5201'), ('MD', 'MT1', 'ME5202'), ('MD', 'MT1', 'ME5203'), ('MD', 'MT1', 'ME5204'), ('MD', 'MT1', 'ME6208'), ('MD', 'MT1', 'ME6209'), ('MD', 'MT1', 'ME6210'), ('MD', 'MT1', 'ME6212'), 
+	 ('MT', 'MT1', 'ME5201'), ('MT', 'MT1', 'ME5203'), ('MT', 'MT1', 'ME5202'), ('MT', 'MT1', 'ME6208'), ('MT', 'MT1', 'ME6209'), ('MT', 'MT1', 'ME6206'), ('MT', 'MT1', 'ME6210'), ('TF', 'MT1', 'ME6205');
+
+INSERT INTO IITP_Timetable.student_enrollment (Branch,`Level`,Course_ID) VALUES
+	 ('EV', 'MT1', 'CE5201'), ('EV', 'MT1', 'CE5202'), ('EV', 'MT1', 'CE5203'), ('EV', 'MT1', 'CE6203'), ('EV', 'MT1', 'CE6204'), ('EV', 'MT1', 'CE5217'),
+	 ('RK', 'MT1', 'CE5205'), ('RK', 'MT1', 'CE5207'), ('RK', 'MT1', 'CE5208'), ('RK', 'MT1', 'CE6211'), ('RK', 'MT1', 'CE5217'), ('RK', 'MT1', 'CE6229'),
+	 ('TS', 'MT1', 'CE5212'), ('TS', 'MT1', 'CE5213'), ('TS', 'MT1', 'CE5214'), ('TS', 'MT1', 'CE6228'), ('TS', 'MT1', 'CE5217'), ('EV', 'MT1', 'CE6210'),
+	 ('ST', 'MT1', 'CE5209'), ('ST', 'MT1', 'CE5210'), ('ST', 'MT1', 'CE5211'), ('ST', 'MT1', 'CE6222'), ('ST', 'MT1', 'CE6210'), ('ST', 'MT1', 'CE5217'),
+	 ('GT', 'MT1', 'CE5204'), ('GT', 'MT1', 'CE5205'), ('GT', 'MT1', 'CE5206'), ('GT', 'MT1', 'CE6211'), ('GT', 'MT1', 'CE6229'), ('GT', 'MT1', 'CE5217');
+
+INSERT INTO IITP_Timetable.student_enrollment (Branch,`Level`,Course_ID) VALUES
+	 ('CBE', 'MT1', 'CB5201'), ('CBE', 'MT1', 'CB5202'), ('CBE', 'MT1', 'CB6203'), ('CBE', 'MT1', 'CB6204'), ('CBE', 'MT1', 'CB6205'), ('CBE', 'MT1', 'CB6206'); 
+
+INSERT INTO IITP_Timetable.student_enrollment (Branch,`Level`,Course_ID) VALUES
+	 ('MSE', 'MT1', 'MM5201'), ('MSE', 'MT1', 'MM5202'), ('MSE', 'MT1', 'MM6201'), ('MSE', 'MT1', 'MM6202'), ('MSE', 'MT1', 'MM6204'), ('MSE', 'MT1', 'MM6205'), ('MSE', 'MT1', 'MM6209'), ('MSE', 'MT1', 'MM6210');
+
+INSERT INTO IITP_Timetable.student_enrollment (Branch,`Level`,Course_ID) VALUES
+	 ('MNC', 'MT1', 'MC5201'), ('MNC', 'MT1', 'MC5202'), ('MNC', 'MT1', 'MC5203'), ('MNC', 'MT1', 'MA5201'), ('MNC', 'MT1', 'MA6211'), ('MNC', 'MT1', 'MA6215');

@@ -8,7 +8,7 @@ import pandas as pd
 DB_CONFIG = {
     'host': 'localhost',
     'user': 'root',
-    'password': 'Abhishekarch@#29.',
+    'password': 'password',
     'database': 'IITP_Timetable'
 }
 
