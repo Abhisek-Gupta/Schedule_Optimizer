@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Schedule Optimizer</title>
+    <meta name="description" content="View your personalized class schedule dynamically.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="background-elements">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <main class="container">
+        <header class="header">
+            <h1>Schedule Optimizer</h1>
+            <p>Access your personalized class timetable instantly.</p>
+        </header>
+
+        <div class="card glass-panel">
+            <div class="tabs">
+                <button class="tab-btn active" id="tab-student" data-role="student">Student</button>
+                <button class="tab-btn" id="tab-faculty" data-role="faculty">Professor</button>
+            </div>
+
+            <form id="schedule-form" class="form-section">
+                <div class="input-group">
+                    <label for="user-id" id="label-user-id">Roll Number</label>
+                    <input type="text" id="user-id" name="user-id" placeholder="e.g., 2512CS01" autocomplete="off">
+                </div>
+                <div class="input-group" id="group-input-container" style="display: none;">
+                    <label for="group-id">Group Number</label>
+                    <input type="number" id="group-id" name="group-id" placeholder="e.g., 4" autocomplete="off">
+                    <small style="color: var(--text-secondary); margin-top: 5px; display: block;">Enter your group number.</small>
+                </div>
+                <button type="submit" class="submit-btn" id="submit-btn">
+                    <span>View Schedule</span>
+                    <div class="loader hidden" id="loader"></div>
+                </button>
+            </form>
+            <div id="error-message" class="error-message hidden"></div>
+        </div>
+
+        <section id="results-section" class="results-section hidden">
+            <div class="glass-panel results-panel">
+                <div class="results-header">
+                    <h2 id="welcome-text">Your Schedule</h2>
+                    <button id="new-search-btn" class="secondary-btn">New Search</button>
+                </div>
+                
+                <div class="table-container">
+                    <table id="schedule-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 100px;">Day</th>
+                                <th>9:00 AM</th>
+                                <th>10:00 AM</th>
+                                <th>11:00 AM</th>
+                                <th>12:00 PM</th>
+                                <th style="width: 60px;">1:00 PM</th>
+                                <th>2:00 PM</th>
+                                <th>3:00 PM</th>
+                                <th>4:00 PM</th>
+                                <th>5:00 PM</th>
+                            </tr>
+                        </thead>
+                        <tbody id="schedule-body">
+                            <!-- Schedule rows will be populated here -->
+                        </tbody>
+                    </table>
+                </div>
+                <div id="no-schedule-msg" class="hidden no-schedule">
+                    <p>No schedule found for this ID.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
