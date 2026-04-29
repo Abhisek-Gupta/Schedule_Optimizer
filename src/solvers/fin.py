@@ -5,13 +5,23 @@ import re
 from collections import defaultdict
 import warnings
 import os
+from dotenv import load_dotenv, dotenv_values
+
+load_dotenv()
 
 warnings.filterwarnings("ignore", category=UserWarning)
 
 # ==========================================
-# 1. CONFIGURATION
+# 1. CONFIGURATION & TIME DOMAINS
 # ==========================================
-DB_CONFIG = {'host': 'localhost', 'user': 'root', 'password': '', 'database': 'IITP_Timetable'}
+DB_CONFIG = {
+    'host': os.getenv('HOST'),
+    'user': os.getenv('USER'),
+    'password': os.getenv('PASSWORD'),
+    'database': os.getenv('DATABASE')
+}
+
+
 DAYS, SLOTS_PER_DAY = 5, 8 
 TOTAL_SLOTS = DAYS * SLOTS_PER_DAY
 CPU_CORES = os.cpu_count() or 4

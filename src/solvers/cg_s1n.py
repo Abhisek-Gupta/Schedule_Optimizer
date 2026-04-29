@@ -3,15 +3,19 @@ import mysql.connector
 import pandas as pd
 import networkx as nx
 import re
+import os
+from dotenv import load_dotenv, dotenv_values
+
+load_dotenv()
 
 # ==========================================
 # 1. CONFIGURATION & TIME DOMAINS
 # ==========================================
 DB_CONFIG = {
-    'host': 'localhost',
-    'user': 'root',
-    'password': '##########',
-    'database': 'IITP_Timetable'
+    'host': os.getenv('HOST'),
+    'user': os.getenv('USER'),
+    'password': os.getenv('PASSWORD'),
+    'database': os.getenv('DATABASE')
 }
 
 DAYS = 5

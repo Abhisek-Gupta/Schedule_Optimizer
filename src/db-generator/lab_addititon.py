@@ -1,15 +1,19 @@
 import mysql.connector
 import pandas as pd
 import random
+import os
+from dotenv import load_dotenv, dotenv_values
+
+load_dotenv()
 
 # ==========================================
-# 1. DATABASE CONFIGURATION
+# 1. CONFIGURATION & TIME DOMAINS
 # ==========================================
 DB_CONFIG = {
-    'host': 'localhost',
-    'user': 'root',          
-    'password': 'password',  
-    'database': 'IITP_Timetable'
+    'host': os.getenv('HOST'),
+    'user': os.getenv('USER'),
+    'password': os.getenv('PASSWORD'),
+    'database': os.getenv('DATABASE')
 }
 
 def generate_lab_assignments():
